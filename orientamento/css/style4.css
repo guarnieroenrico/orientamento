@@ -1,0 +1,178 @@
+.loghi {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 9999;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cormorant Garamond", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../img-vid/20250429-napoli_181kstxy27igf1jakoxpki45oq.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.btn-home {
+    display: inline-block;
+    margin-left: 15px; 
+    padding: 10px 20px;
+    background-color: #009fe3; 
+    color: white;
+    text-decoration: none;
+    font-family: "Shadows Into Light", cursive;
+    font-size: 1.2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-home:hover {
+    background-color: #0073a7; 
+    transform: translateY(-2px);
+}
+
+.box-centrale {
+    max-width: 850px;
+    width: 90%;
+    margin: 180px auto;
+    padding: 30px;
+    background: #ffffff; 
+    border-radius: 18px;
+    border-top: 6px solid #009fe3;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+}
+
+.box-centrale h1 {
+    font-family: "Shadows Into Light", cursive;
+    color: #006fa7; 
+    font-size: 3rem;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    display: inline-block;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.box-centrale h2 {
+    color: #009fe3; 
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: "Shadows Into Light", cursive;
+}
+
+.box-centrale p {
+    font-size: 1.2rem;
+    color: #333; 
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.img-sezione {
+    width: 70%;
+    max-height: 300px;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+}
+
+
+@media (max-width: 1024px) {
+    
+    .box-centrale {
+        margin: 120px auto;
+    }
+    
+    .box-centrale h1 {
+        font-size: 2.5rem;
+    }
+
+    .box-centrale h2 {
+        font-size: 1.6rem;
+    }
+
+    .box-centrale p {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    
+    body {
+        background-attachment: scroll;
+        padding-bottom: 20px;
+    }
+    
+    .loghi {
+        position: static;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 0;
+        gap: 15px;
+    }
+    
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .btn-home {
+        padding: 8px 12px;
+        font-size: 1em;
+        margin-left: 0;
+    }
+
+    .box-centrale {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px 10px;
+        border-radius: 10px;
+    }
+
+    .box-centrale h1 {
+        font-size: 2rem;
+        padding: 8px 15px;
+        margin-bottom: 20px;
+    }
+
+    .box-centrale h2 {
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+
+    .box-centrale p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .img-sezione {
+        width: 90%;
+        max-height: 250px;
+        margin: 15px 0;
+    }
+}

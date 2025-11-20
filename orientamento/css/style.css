@@ -1,0 +1,194 @@
+/* Stili Base */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4faff;
+    color: #003b7a;
+}
+
+.PRT {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 4rem;
+    margin: 0;
+    color: black;
+}
+
+.PRS {
+    font-size: 2rem;
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    color: black;
+}
+
+.loghi {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 9999;
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.4));
+}
+
+header {
+    /* Assicurati che il percorso dell'immagine sia corretto in base alla tua struttura di cartelle */
+    background-image: url('../img-vid/pexels-kelly-17311064.jpg'); 
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenitore {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.card-section {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Importante per mandare a capo le card */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(4px);
+    width: 300px;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.30s, box-shadow 0.30s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.card h3 {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 2rem;
+    margin: 15px 0 5px;
+    color: black;
+}
+
+.card p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.btn-card {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: #34bab6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-card:hover {
+    background: #005fb8;
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        height: 400px; 
+    }
+
+    .PRT {
+        font-size: 3.5rem; 
+    }
+
+    .PRS {
+        font-size: 1.8rem; 
+    }
+
+    
+    .card {
+        width: 40%; 
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 300px; 
+        background-attachment: scroll; 
+    }
+    
+    .loghi {
+        position: static; 
+        justify-content: center;
+        padding-top: 15px; 
+    }
+    
+    
+    .loghi {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .PRT {
+        font-size: 2.5rem;
+        margin-top: 70px; 
+    }
+
+    .PRS {
+        font-size: 1.2rem; 
+    }
+    
+    .contenitore {
+        padding: 40px 0;
+    }
+
+    .card-section {
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .card {
+        width: 90%; 
+        max-width: 350px;
+    }
+}
